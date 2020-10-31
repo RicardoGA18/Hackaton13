@@ -11,13 +11,55 @@
     <header>
         <div class="headBox">
             <h1>Dog Crud</h1>
-            <p>Agregar mascota</p>
+            <p id="btnAdd">Agregar mascota</p>
         </div>
     </header>
-    <div class="container">
+    <div class="container" id="container">
         <div class="Btn-Box">
-            <button class="Btn-Add">Agregar Mascota</button>
+            <button class="Btn-Add" id="btnStart">Agregar Mascota</button>
         </div>
+    </div>
+    <div class="Modal" id="modal">
+        
+        <form>
+            <div class="Modal-Title">
+                <h2>Agregar Mascota</h2>
+                <span id="close">&times;</span>
+            </div>
+            <div>
+                <input id="nombre" type="text" placeholder="Nombre" required>
+            </div>
+            <div>
+                <input id="apellido" type="text" placeholder="Apellido" required>
+            </div>
+            <div>
+                <input id="raza" type="text" placeholder="Raza" required>
+            </div>
+            <div>
+                <input type="tel" id="tel" placeholder="Teléfono" required>
+            </div>
+            <div>
+                <select name="pais" id="pais" required>
+                    <option value="">País</option>
+                    <option value="Perú">Perú</option>
+                    <option value="Ecuador">Ecuador</option>
+                    <option value="Chile">Chile</option>
+                    <option value="Brasil">Brasil</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="Venezuela">Venezuela</option>
+                </select>
+            </div>
+            <div>
+                <input type="url" id="url" placeholder="Url de Fotografía" required>
+            </div>
+            <div class="Modal-Description">
+                <textarea id="description" required placeholder="Sobre él/ella"></textarea>
+            </div>
+            <div class="Modal-Box-Btn">
+                <button id="btnAccept" class="Modal-Btn" type="submit">Aceptar</button>
+                <button id="btnClose" class="Modal-Btn" type="button">Cancelar</button>
+            </div>
+        </form>
     </div>
     <script src="./app.js"></script>
 </body>

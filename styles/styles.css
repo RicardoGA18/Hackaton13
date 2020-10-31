@@ -36,12 +36,22 @@ header h1 {
 header p {
   font-size: 12px;
   line-height: 14px;
+  cursor: pointer;
 }
 
 .container {
   width: 100%;
   max-width: 1100px;
   margin: 0 auto;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .Btn-Box {
@@ -60,5 +70,181 @@ header p {
   font-size: 18px;
   border: none;
   background-color: #C4C4C4;
+  cursor: pointer;
+}
+
+.Modal {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Modal form {
+  width: 673px;
+  height: 577px;
+  background-color: white;
+  padding: 20px 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: 10px (1fr)[6] 25px;
+      grid-template-rows: 10px repeat(6, 1fr) 25px;
+  grid-column-gap: 27px;
+  grid-row-gap: 30px;
+}
+
+.Modal form input, .Modal form select, .Modal form textarea {
+  width: 100%;
+  height: 100%;
+}
+
+.Modal form input {
+  padding-left: 10px;
+  border: 1px solid gray;
+}
+
+.Modal form textarea {
+  padding: 10px;
+  border: 1px solid gray;
+}
+
+.Modal-Title {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Modal-Title h2 {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.Modal-Title span {
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.Modal-Description {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  -ms-grid-row: 5;
+      grid-row-start: 5;
+  grid-row-end: 8;
+}
+
+.Modal-Box-Btn {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Modal-Box-Btn :nth-child(1) {
+  margin-right: 18px;
+}
+
+.Modal-Box-Btn :nth-child(n) {
+  background-color: #c4c4c4;
+  border: none;
+  padding: 12px 40px;
+  cursor: pointer;
+}
+
+.Card {
+  position: relative;
+  width: 240px;
+  height: 328px;
+  padding: 18px;
+  border: 1px solid gray;
+  margin-bottom: 28px;
+}
+
+.Card-Img {
+  width: 140px;
+  height: 140px;
+  border-radius: 100%;
+  overflow: hidden;
+  margin: 0 auto 10px;
+}
+
+.Card-Img img {
+  width: 100%;
+  height: 100%;
+}
+
+.Card-Name {
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+}
+
+.Card p {
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  margin-top: 3px;
+}
+
+.Card-Delete, .Card-Edit {
+  cursor: pointer;
+  position: absolute;
+}
+
+.Card-Delete img, .Card-Edit img {
+  width: 15px;
+  margin-bottom: 3px;
+}
+
+.Card-Delete p, .Card-Edit p {
+  font-size: 9px;
+  line-height: 10px;
+  text-align: center;
+}
+
+.Card-Delete {
+  right: 10px;
+  top: 10px;
+}
+
+.Card-Delete img {
+  margin-left: 5px;
+}
+
+.Card-Edit {
+  left: 10px;
+  top: 10px;
+}
+
+.Card-Edit img {
+  margin-left: 3px;
 }
 /*# sourceMappingURL=styles.css.map */
